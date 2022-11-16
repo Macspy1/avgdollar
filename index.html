@@ -77,20 +77,25 @@ font-size: 1005%; height: 100%;display: block;
 }
 
     </style>
-    <title> Tic tac toe</title>
+    <title> TIC TAC TOE</title>
     <script>
+        start =1;
     	function myfunction13(){document.getElementById("tic").innerHTML ="TIC TAC NO";
     console.log("no");
-    
+    if(start >0){
+    start--;
+    turn =0;
+    console.log(turn);
+    }
     }
    </script>
   <!-- <button id="" onclick="location.reload();">↺</button></th>-->
-  <h1 style="color: white;" id="tic" onclick="myfunction13()">TIC TAC TOE</h1>
+  <h1 style="color: white; text-align: center;" id="tic" onclick="myfunction13(), myFunction12()">TIC TAC TOE</h1>
 </head>
 
 <body>
    
-    <table id="tab">
+    <table id="tab" >
         <tr>
           <th><button id="d1" onclick="myFunction1() ">_</button></th>
           <th><button id="d2" onclick="myFunction2() ">_</button></th>
@@ -107,6 +112,7 @@ font-size: 1005%; height: 100%;display: block;
             <td><button id="d9" onclick="myFunction9()">_</button></td>
         </tr>
       </table>
+      
 <h1 id="out"></h1>
 
 <script>
@@ -175,7 +181,7 @@ function myFunction12() {if(turn==0){
     console.log("m: "+m);
     if(m<=4){
     console.log("turn");
-
+   r = 1 +Math.floor(Math.random() * 9);
 	console.log("r = " +r);
     console.log("turninwhile");
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {if(r ==1 ){document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}}
@@ -225,7 +231,7 @@ if(t==2){
 if(stale==9){
     console.log("staleyoulose");
     document.getElementById("out").innerHTML = "Stalemate";
-    document.getElementById("tab").style="display: none;";
+  document.getElementById("tab").style="display: none;";
 
 }
 
