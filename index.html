@@ -219,7 +219,7 @@ h1{font-size: 85px;}
             cross =0;
             cross1 =0;
             cross2 =0;
-       
+            over =1;
             down = 0;
             down1 = 0;
             down2 = 0;
@@ -264,7 +264,7 @@ function myFunction9() {console.log("func");if(document.getElementById("d9").inn
 
 
 
-function myFunction12() {if(turn==0){
+function myFunction12() {if(turn==0){if(over==1){
     console.log("m: "+m);
     if(m<=4){
     console.log("turn");
@@ -356,6 +356,7 @@ if(t==2){
     document.getElementById("margina").style="display: none;";
 }
 if(stale==9){
+    over=0;
     console.log("staleyoulose");
     document.getElementById("out").innerHTML = "Stalemate";
   document.getElementById("margina").style="display: none;";
@@ -370,7 +371,7 @@ if(t==0){
     
     
         
-  }  }
+  }  }}
     
 </script>
   
