@@ -139,7 +139,7 @@ border-style: solid;
 
 #margina{margin-left: 10%;
 margin-right: 10%;
-height: 100%;
+height: 150%;
 }
 #th{width: 100%;
 column-width: 100%; height: 100%;display: block;}
@@ -148,7 +148,7 @@ column-width: 100%; height: 100%;display: block;}
 #td{width: 100%;column-width: 100%; height: 100%;display: block;}
 #out{color: white;
 text-align: center;
-font-size: 1005%; height: 100%;display: block;}
+font-size: 905%; height: 100%;display: block;}
 
 h1{font-size: 85px;}
 
@@ -311,7 +311,7 @@ if(crossx2 ==2){
     if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}
   
 }
-    
+    if(turn==0){
 
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {if(r ==1 ){document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}}
     if(document.getElementById("d2").innerHTML !="X" && document.getElementById("d2").innerHTML !="O") {if(r ==2 ){document.getElementById("d2").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}}
@@ -323,7 +323,7 @@ if(crossx2 ==2){
     if(document.getElementById("d8").innerHTML !="X" && document.getElementById("d8").innerHTML !="O") {if(r ==8 ){document.getElementById("d8").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down1+=1;}}
     if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {if(r ==9 ){document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}}
     r = 1 +Math.floor(Math.random() * 9);
-    }
+    }}
 if (crossx == 3) {t=1;}
 if (crossx1 == 3) {t=1;}
 if (crossx2 == 3) {t=1;}
@@ -372,7 +372,7 @@ if(t==0){
     
     
         
-    }}
+  }  }
     
 </script>
   
