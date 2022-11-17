@@ -1,207 +1,4 @@
-<!DOCTYPE html>
-<html>
 
-<head >
-    <style>
-
-@font-face {
-  font-family: minecraft;
-  src: url(MinecraftBold-nMK1.otf);
-  src: url(MinecraftBoldItalic-1y1e.otf);
-  src: url(MinecraftItalic-R8Mo.otf);
-  src: url(MinecraftRegular-Bmg3.otf);
-}
-
-@media only screen and (min-width: 1000px) {
-
-        html{background-color: rgb(212, 127, 127); height: 100%;}
-        table{border-radius: 15px;
-        width: 100%;column-width: 100%;
-    height: 100%;}
-    body{ height: 100%;}
-        
-#tab{text-align: center;
-    width: 40%;
-    height: 200%;
-
- margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-border: 5px;
-border-color: black;
-background-color: rgb(0, 0, 0);
-border-style: solid;
-
-}
-
-
-
-button{
-    width:100%;
-   height: 100%;
-   background-color: green;
-   border-radius: 10%;
-   color: white;
-   display:initial;
-   font-size: 600%;
-
-}
-button:hover{
-    width:100%;
-   height: 100%;
-   background-color: rgba(0, 128, 0, 0.596);
-   border: 4%;
-border-color: black;
-display: block;
-border-style: solid;
-   border-radius: 15%;
-   color: white;
- 
-   font-size: 600%;
-
-}
-#th{width: 100%;
-column-width: 100%; height: 100%;display: block;}
-#tr{width: 100%;
-column-width: 100%; height: 100%;display: block;}
-#td{width: 100%;column-width: 100%; height: 100%;display: block;}
-#out{color: white;
-text-align: center;
-font-size: 1005%; height: 100%;display: block;
-}
-
-
-
-
-
-*{font-family:minecraft;}
-
-}
-
-
-
-
-
-
-
-
-
-
-        html{background-color: rgb(53, 27, 27); height: 100%;}
-        table{border-radius: 15px;
-        width: 100%;column-width: 100%;
-    height: 100%;
-    }
-    body{ height: 25%;}
-        
-#tab{text-align: center;
-
-    margin-left: 10%;
-margin-right: 10%;
- margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-border: 5px;
-border-color: black;
-background-color: rgb(0, 0, 0);
-border-style: solid;
-
-}
-
-
-
-button{
-    width:100%;
-   height: 100%;
-   background-color: green;
-   border-radius: 10%;
-   color: white;
-   display:initial;
-   font-size: 300%;
-
-}
-button:hover{
-    width:100%;
-   height: 100%;
-   background-color: rgba(0, 128, 0, 0.596);
-   border: 4%;
-border-color: black;
-display: block;
-border-style: solid;
-   border-radius: 15%;
-   color: white;
- 
-   font-size: 300%;
-
-}
-
-#margina{margin-left: 10%;
-margin-right: 10%;
-height: 150%;
-}
-#th{width: 100%;
-column-width: 100%; height: 100%;display: block;}
-#tr{width: 100%;
-column-width: 100%; height: 100%;display: block;}
-#td{width: 100%;column-width: 100%; height: 100%;display: block;}
-#out{color: white;
-text-align: center;
-font-size: 905%; height: 100%;display: block;}
-
-h1{font-size: 85px;}
-
-
-
-
-*{font-family:minecraft;}
-
-
-    
-
-
-
-
-
-    </style>
-    <title> TIC TAC TOE</title>
-    <script>
-        start =1;
-    	function myfunction13(){document.getElementById("tic").innerHTML ="TIC TAC NO";
-    console.log("no");
-    if(start >0){
-    start--;
-    turn =0;
-    console.log(turn);
-    }
-    }
-   </script>
-  <!-- <button id="" onclick="location.reload();">↺</button></th>-->
-  <h1 style="color: white; text-align: center;" id="tic" onclick="myfunction13(), myFunction12()">TIC TAC TOE</h1>
-</head>
-
-<body>
-   <div id="margina">
-    <table id="tab" >
-        <tr>
-          <th><button id="d1" onclick="myFunction1() ">_</button></th>
-          <th><button id="d2" onclick="myFunction2() ">_</button></th>
-          <th><button id="d3" onclick="myFunction3()">_</button></th>
-        </tr>
-        <tr>
-            <td><button id="d4" onclick="myFunction4()">_</button></td>
-            <td><button id="d5" onclick="myFunction5()">_</button></td>
-            <td><button id="d6" onclick="myFunction6()">_</button></td>
-        </tr>
-        <tr>
-            <td><button id="d7" onclick="myFunction7()">_</button></td>
-            <td><button id="d8" onclick="myFunction8()">_</button></td>
-            <td><button id="d9" onclick="myFunction9()">_</button></td>
-        </tr>
-      </table>
-      </div>
-<h1 id="out"></h1>
-
-<script>
      turn =1;
      t=0;
      var m = 0;
@@ -271,6 +68,7 @@ function myFunction12() {if(turn==0){if(over==1){
    r = 1 +Math.floor(Math.random() * 9);
 	console.log("r = " +r);
     console.log("turninwhile");
+    if(turn==0){
     if(down ==2){
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
     if(document.getElementById("d4").innerHTML !="X" && document.getElementById("d4").innerHTML !="O") {document.getElementById("d4").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down+=1;}
@@ -307,7 +105,7 @@ if(cross2 ==2){
     if(document.getElementById("d8").innerHTML !="X" && document.getElementById("d8").innerHTML !="O") {document.getElementById("d8").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down1+=1;}
     if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}
   
-}
+}}
 
 if(turn==0){
 
@@ -394,12 +192,13 @@ if(t==2){
     document.getElementById("out").innerHTML = "You Lose";
     document.getElementById("margina").style="display: none;";
 }
+if(t!=1 && t!=2){
 if(stale==9){
     over=0;
     console.log("staleyoulose");
     document.getElementById("out").innerHTML = "Stalemate";
   document.getElementById("margina").style="display: none;";
-
+}
 }
 
 
@@ -412,8 +211,3 @@ if(t==0){
         
   }  }}
     
-</script>
-  
-</body>
-
-</html>
