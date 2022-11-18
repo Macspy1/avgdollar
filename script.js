@@ -84,8 +84,8 @@ function myFunction12() {if(turn==0){if(over==1){
      if(document.getElementById("d3").innerHTML !="X" && document.getElementById("d3").innerHTML !="O") {document.getElementById("d3").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia1+=1; down2 +=1; }
      if(document.getElementById("d6").innerHTML !="X" && document.getElementById("d6").innerHTML !="O") {document.getElementById("d6").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down2+=1;}
      if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}
-    }
-
+    }}
+    if(turn==0){
 if(cross ==2){
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O"){ document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
     if(document.getElementById("d2").innerHTML !="X" && document.getElementById("d2").innerHTML !="O") {document.getElementById("d2").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
@@ -124,8 +124,8 @@ if(turn==0){
      if(document.getElementById("d3").innerHTML !="X" && document.getElementById("d3").innerHTML !="O") {document.getElementById("d3").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia1+=1; down2 +=1; }
      if(document.getElementById("d6").innerHTML !="X" && document.getElementById("d6").innerHTML !="O") {document.getElementById("d6").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down2+=1;}
      if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}
-    }
-
+    }}
+    if(turn==0){
 if(crossx ==2){
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O"){ document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
     if(document.getElementById("d2").innerHTML !="X" && document.getElementById("d2").innerHTML !="O") {document.getElementById("d2").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
