@@ -48,15 +48,15 @@
 
 
 
-function myFunction1(){ console.log("func");if(document.getElementById("d1").innerHTML =="_") {console.log("func1");stale+=1;m+=1; a = "X";  us +=1; crossx +=1; diax+=1; downx+=1; document.getElementById("d1").innerHTML = "X"; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
+function myFunction1(){ console.log("func");if(document.getElementById("d1").innerHTML =="_") {console.log(diax1 + "diax: "+diax1);stale+=1;m+=1; a = "X";  us +=1; crossx +=1; diax+=1; downx+=1; document.getElementById("d1").innerHTML = "X"; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
 function myFunction2(){ console.log("func");if(document.getElementById("d2").innerHTML =="_") {console.log("func1");stale+=1;m+=1; a1 = "X"; us +=1;  crossx +=1; downx1+=1;  document.getElementById("d2").innerHTML = "X";r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
-function myFunction3() {console.log("func");if(document.getElementById("d3").innerHTML =="_" ){console.log("func1");stale+=1;m+=1; a2 = "X"; us +=1;  crossx +=1; diax1+=1;document.getElementById("d3").innerHTML = "X"; downx2 +=1;  r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
+function myFunction3() {console.log("func");if(document.getElementById("d3").innerHTML =="_" ){console.log(dia + "diax: "+diax);stale+=1;m+=1; a2 = "X"; us +=1;  crossx +=1; diax1+=1;document.getElementById("d3").innerHTML = "X"; downx2 +=1;  r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
 function myFunction4() {console.log("func");if(document.getElementById("d4").innerHTML =="_" ){console.log(crossx1);stale+=1;m+=1; b = "X"; us +=1; crossx1 +=1; downx+=1;  document.getElementById("d4").innerHTML = "X";r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
-function myFunction5() {console.log("func");if(document.getElementById("d5").innerHTML =="_" ){console.log(crossx1);stale+=1;m+=1;b1 = "X"; us +=1;  crossx1 +=1; downx1+=1; document.getElementById("d5").innerHTML = "X";diax += 1; diax1 += 1;  r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
+function myFunction5() {console.log("func");if(document.getElementById("d5").innerHTML =="_" ){console.log(diax1 + "diax: "+diax1);stale+=1;m+=1;b1 = "X"; us +=1;  crossx1 +=1; downx1+=1; document.getElementById("d5").innerHTML = "X";diax += 1; diax1 += 1;  r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
 function myFunction6() {console.log("func");if(document.getElementById("d6").innerHTML =="_" ){console.log(crossx1);stale+=1;m+=1; b2 = "X"; us +=1; crossx1 +=1; downx2+=1; document.getElementById("d6").innerHTML = "X";r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
-function myFunction7() {console.log("func");if(document.getElementById("d7").innerHTML =="_" ){console.log("func1");stale+=1;m+=1; c = "X";  us +=1; crossx2 +=1; downx+=1; document.getElementById("d7").innerHTML = "X";diax1 += 1; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
+function myFunction7() {console.log("func");if(document.getElementById("d7").innerHTML =="_" ){console.log(dia + "diax: "+diax);stale+=1;m+=1; c = "X";  us +=1; crossx2 +=1; downx+=1; document.getElementById("d7").innerHTML = "X";diax1 += 1; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
 function myFunction8() {console.log("func");if(document.getElementById("d8").innerHTML =="_" ){console.log("func1");stale+=1;m+=1; c1 = "X"; us +=1;  crossx2 +=1; downx1+=1; document.getElementById("d8").innerHTML = "X";r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
-function myFunction9() {console.log("func");if(document.getElementById("d9").innerHTML =="_" ){console.log("func1");stale+=1;m+=1; c2 = "X"; us +=1;  crossx2 +=1; downx2+=1;document.getElementById("d9").innerHTML = "X"; diax += 1; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
+function myFunction9() {console.log("func");if(document.getElementById("d9").innerHTML =="_" ){console.log(diax1 + "diax: "+diax);stale+=1;m+=1; c2 = "X"; us +=1;  crossx2 +=1; downx2+=1;document.getElementById("d9").innerHTML = "X"; diax += 1; r = 1 +Math.floor(Math.random() * 9);turn =0;myFunction12()}}
 
 
 
@@ -68,24 +68,69 @@ function myFunction12() {if(turn==0){if(over==1){
    r = 1 +Math.floor(Math.random() * 9);
 	console.log("r = " +r);
     console.log("turninwhile");
-    if(turn==0){
-    if(down ==2){
+
+
+
+
+
+if(turn==0){
+
+        if(diax ==2){
+        if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
+        if(document.getElementById("d5").innerHTML !="X" && document.getElementById("d5").innerHTML !="O") {document.getElementById("d5").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down+=1;}
+        if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down+=1; dia1 += 1;}}
+        
+        if(diax1 ==2){
+        if(document.getElementById("d3").innerHTML !="X" && document.getElementById("d3").innerHTML !="O") {document.getElementById("d3").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
+        if(document.getElementById("d5").innerHTML !="X" && document.getElementById("d5").innerHTML !="O") {document.getElementById("d5").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down1+=1; dia += 1; dia1 += 1;}
+        if(document.getElementById("d7").innerHTML !="X" && document.getElementById("d7").innerHTML !="O") {document.getElementById("d7").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down1+=1;}
+        }
+    
+}
+if(turn==0){
+
+        if(dia ==2){
+        if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
+        if(document.getElementById("d5").innerHTML !="X" && document.getElementById("d5").innerHTML !="O") {document.getElementById("d5").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down+=1;}
+        if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down+=1; dia1 += 1;}}
+        
+        if(dia1 ==2){
+        if(document.getElementById("d3").innerHTML !="X" && document.getElementById("d3").innerHTML !="O") {document.getElementById("d3").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
+        if(document.getElementById("d5").innerHTML !="X" && document.getElementById("d5").innerHTML !="O") {document.getElementById("d5").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down1+=1; dia += 1; dia1 += 1;}
+        if(document.getElementById("d7").innerHTML !="X" && document.getElementById("d7").innerHTML !="O") {document.getElementById("d7").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down1+=1;}
+        }
+    
+}
+
+
+
+
+       
+
+
+
+
+
+
+
+if(turn==0){
+if(down ==2){
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O") {document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
     if(document.getElementById("d4").innerHTML !="X" && document.getElementById("d4").innerHTML !="O") {document.getElementById("d4").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down+=1;}
     if(document.getElementById("d7").innerHTML !="X" && document.getElementById("d7").innerHTML !="O") {document.getElementById("d7").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down+=1; dia1 += 1;}}
     
-    if(down1 ==2){
+if(down1 ==2){
     if(document.getElementById("d2").innerHTML !="X" && document.getElementById("d2").innerHTML !="O") {document.getElementById("d2").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
     if(document.getElementById("d5").innerHTML !="X" && document.getElementById("d5").innerHTML !="O") {document.getElementById("d5").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down1+=1; dia += 1; dia1 += 1;}
     if(document.getElementById("d8").innerHTML !="X" && document.getElementById("d8").innerHTML !="O") {document.getElementById("d8").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down1+=1;}
-    }
+}
 
-    if(down2 ==2){
+if(down2 ==2){
      if(document.getElementById("d3").innerHTML !="X" && document.getElementById("d3").innerHTML !="O") {document.getElementById("d3").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia1+=1; down2 +=1; }
      if(document.getElementById("d6").innerHTML !="X" && document.getElementById("d6").innerHTML !="O") {document.getElementById("d6").innerHTML = "O";stale+=1;turn=1; cont +=1; cross1 +=1; down2+=1;}
      if(document.getElementById("d9").innerHTML !="X" && document.getElementById("d9").innerHTML !="O") {document.getElementById("d9").innerHTML = "O";stale+=1;turn=1; cont +=1; cross2 +=1; down2+=1; dia += 1;}
-    }}
-    if(turn==0){
+}}
+if(turn==0){
 if(cross ==2){
     if(document.getElementById("d1").innerHTML !="X" && document.getElementById("d1").innerHTML !="O"){ document.getElementById("d1").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; dia+=1; down+=1;}
     if(document.getElementById("d2").innerHTML !="X" && document.getElementById("d2").innerHTML !="O") {document.getElementById("d2").innerHTML = "O";stale+=1;turn=1; cont +=1; cross +=1; down1+=1;}
