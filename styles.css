@@ -173,7 +173,18 @@ text-align: center;
   
   h1{font-size: 65px;}
   
-  
+  #out{
+    color: white;
+    margin: 0px;
+    font-size: 55px;
+    size: 150px;
+    padding: 0px;
+    
+    background-color: rgba(219, 31, 31, 0);
+display: block;
+text-align: center;
+
+}
   
   
   *{font-family:minecraft;}
