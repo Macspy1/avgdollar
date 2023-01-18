@@ -60,8 +60,10 @@
                     + "<br> <br>" +"Monthly pay: " + roundToTwo(mpay) +"$" 
                     + "<br> <br>" +"Yearly pay: "+ roundToTwo(ypay) +"$" 
                     + "<br> <br>" +"Money added from Interest per year: "+ roundToTwo(yearlyinterestadded) +"$" 
-                    + "<br> <br>" +"Money in the account because of interest after " + num4 +" years: "+roundToTwo(ypayandinteresttotal) +"$"
+                    
                 }
+                   if(num4 == 1){content += "<br> <br>" +"Money in the account because of interest after " + num4 +" year: "+ roundToTwo(ypayandinteresttotal)+"$"}
+                else{content += "<br> <br>" +"Money in the account because of interest after " + num4 +" years: "+ roundToTwo(ypayandinteresttotal) +"$"}
                 document.getElementById("content").innerHTML = " " + content;
             }
 
