@@ -8,186 +8,107 @@
   }
   
   
-  #tic{background-color: #134400;
-  display: block;
-  margin-left: 30%;
-  margin-right: 30%;
-  border-style: double;
-  border-color: rgb(0, 0, 0);
-  border-width: 15px;
-  
-  }
+
   
   @media only screen and (min-width: 1000px) {
 
    
 
-  
-          html{background-color: #073B4C; height: 100%;}
-          table{border-radius: 15px;
-          width: 100%;column-width: 100%;
-      height: 100%;}
-      body{ height: 100%;}
-          
-  #tab{text-align: center;
-      width: 40%;
-      height: 170%;
-      padding: 1%;
-   margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  border: 5px;
-  border-color: black;
-  background-color: rgb(0, 0, 0);
-  border-style: solid;
-  
   }
   
-  
-  
-  button{
-      width:100%;
-     height: 100%;
-     background-color: #118AB2;
-    
-     color: white;
-     display:initial;
-     font-size: 500%;
-     border-style:solid;
-     border-color: rgb(0, 0, 0);
-     border-width: 5px;
-  
-  }
-  button:hover{
-      width:100%;
-     height: 100%;
-     background-color: rgba(0, 92, 128, 0.664);
-     border: 4%;
-  border-color: black;
-  display: block;
-  border-style: solid;
-     
-     color: white;
-   
-     font-size: 500%;
-  
-  }
-  #th{width: 100%;
-  column-width: 100%; height: 100%;display: block;}
-  #tr{width: 100%;
-  column-width: 100%; height: 100%;display: block;}
-  #td{width: 100%;column-width: 100%; height: 100%;display: block;}
-  
-  
-  
-  
-  
-  
-  *{font-family:minecraft;}
-  h1{font-size: 35px;}
+  #form{width: 100%;
+    background-color: aliceblue; }
+
+
+
+  td{width: 100%;}
   
 
 
-  #out{
+  
+  html{background-color: black;}
+  body{font-family:minecraft;
+    background-color: rgb(37, 37, 37);
     color: white;
-    margin: 0px;
-    font-size: 55px;
-    size: 150px;
-    padding: 0px;
-    
-    background-color: rgba(219, 31, 31, 0);
-display: block;
-text-align: center;
+    border-color: white;}
+  
+  
+  
+  
+  
+  
+  *{font-family:minecraft;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border-color: white;
+  font-size: 70px;
+  text-align: center;
+  }
+
+
+#avgt{border-style: solid;
+border-width: 15px;
+border-color: white;
+padding: 10px;
+margin: 150px;
+margin-top: 35px;
+
+margin-bottom: -50px;
+
+border-radius: 30px;
 
 }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-          html{background-color: #1B2A41 ; height: 100%;}
-          table{border-radius: 15px;
-          width: 100%;column-width: 100%;
-      height: 100%;
-      }
-      body{ height: 25%;}
-          
-  #tab{text-align: center;
-      padding: 1%;
-      margin-left: 10%;
-  margin-right: 10%;
-   margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  border: 5px;
-  border-color: black;
-  background-color: rgb(0, 0, 0);
-  border-style: solid;
-  
-  }
-  
-  
-  
-  button{
-      width:100%;
-     height: 100%;
-     background-color: #118AB2;
-     
-     color: white;
-     display:initial;
-     font-size: 600%;
-     border-style:solid;
-     border-color: rgb(0, 0, 0);
-     border-width: 5px;
-  }
-  button:hover{
-      width:100%;
-     height: 100%;
-     background-color: rgba(0, 92, 128, 0.664);
-     border: 4%;
-  border-color: black;
-  display: block;
-  border-style: solid;
-    
-     color: white;
-   
-     font-size: 600%;
-  
-  }
-  
-  #margina{margin-left: 10%;
-  margin-right: 10%;
-  height: 150%;
-  }
-  #th{width: 100%;
-  column-width: 100%; height: 100%;display: block;}
-  #tr{width: 100%;
-  column-width: 100%; height: 100%;display: block;}
-  #td{width: 100%;column-width: 100%; height: 100%;display: block;}
-  
-  h1{font-size: 65px;}
-  
-  #out{
-    color: white;
-    margin: 0px;
-    font-size: 55px;
-    size: 150px;
-    padding: 0px;
-    
-    background-color: rgba(219, 31, 31, 0);
-display: block;
-text-align: center;
 
-}
+  .form-control{
+    width: 50%;
+    height: 100px;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  background-color: rgba(69, 101, 129, 0.086);
+  color: white;
+  border-width: 10px;
   
+  }
+
+  #myForm{margin-left: 100px;
+  margin-right: auto;
+  display: block;
+  background-color: aliceblue;
+  }
+
+  #exampleModal{background-color: rgba(255, 255, 255, 0.107);}
+
+  .buttonsub{padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 55px;
+    border-width: 15px;
+  }
+
+  .modal-footer{background-color: rgb(30, 30, 30);
   
-  *{font-family:minecraft;}
+  }
+
+  .modal{    --bs-modal-width: 700px;}
+
+  #subtext{
+    margin-top: -35px;
+    font-size: 45px;
+  color: rgb(208, 208, 208);}
+
+  #footer1{
+    color: rgb(124, 124, 124);
+    font-size: 25px;
+  text-align: left;
+ margin-top: -40px;
+  margin-bottom: -30px;
+  
+  }
   
   
       
