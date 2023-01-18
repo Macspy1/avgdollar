@@ -1,51 +1,107 @@
-<!DOCTYPE html>
 <html>
 
-<head >
-    <link rel="stylesheet" href="styles.css">
-
+<head>
+    <title>Lab09 - Task 1</title>
+    <!-- Bootstrap CSS and JavaScript CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+<link rel="stylesheet" href="styles.css">
+    <!-- This allows the program to get the data entered by the user into the form. Do not move this -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     
-    <title> TIC TAC TOE</title>
-    <script>
-        start =1;
-    	function myfunction13(){document.getElementById("tic").innerHTML ="TIC TAC NO";
-    console.log("no");
-    if(start >0){
-    start--;
-    turn =0;
-    console.log(turn);
-    }
-    }
-   </script>
-  <!-- <button id="" onclick="location.reload();">↺</button></th>-->
-  <h1 style="color: white; text-align: center;" id="tic" onclick="myfunction13(), myFunction12()">TIC TAC TOE</h1>
-<p id="out"></p>
 </head>
 
-<body>
-   <div id="margina">
-    <table id="tab" >
-        <tr>
-          <th><button id="d1" onclick="myFunction1() ">_</button></th>
-          <th><button id="d2" onclick="myFunction2() ">_</button></th>
-          <th><button id="d3" onclick="myFunction3()">_</button></th>
-        </tr>
-        <tr>
-            <td><button id="d4" onclick="myFunction4()">_</button></td>
-            <td><button id="d5" onclick="myFunction5()">_</button></td>
-            <td><button id="d6" onclick="myFunction6()">_</button></td>
-        </tr>
-        <tr>
-            <td><button id="d7" onclick="myFunction7()">_</button></td>
-            <td><button id="d8" onclick="myFunction8()">_</button></td>
-            <td><button id="d9" onclick="myFunction9()">_</button></td>
-        </tr>
-      </table>
-      </div>
+<body style="padding-left: 15px; padding-top: 10px;">
+    <div id="forms">
+        <h1 id="avgt">Average rate Calculator</h1>
+        <table>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+           
+                    <br>
+                    <form id="myForm">
+                        <!-- Add your form elements below -->
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">How much do you get payed per hour? </label>
+                           <p id="subtext"> Minimum wage in Canada is 15.55$/h </p>
+                            <!--This is an text type input, for text-->
+                            <input name="nameinput" type="number" class="form-control" id="exampleFormControlInput1"
+                                value="15.55" >
+                        </div>
+                      
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput2" class="form-label">How many hours a day do you work?</label>
+                          <!--This is an text type input, for text-->
+                          <input name="nameinput" type="number" class="form-control" id="exampleFormControlInput1"
+                              value="8" >
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">How many days a week do you work?</label>
+                        <!--This is an text type input, for text-->
+                        <input name="nameinput" type="number" class="form-control" id="exampleFormControlInput1"
+                            value="5" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput2" class="form-label">How much interest does your account have?</label>
+                      <!--This is an text type input, for text-->
+                      <input name="nameinput" type="number" class="form-control" id="exampleFormControlInput1"
+                          value="0.1" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">How many years are you calculating for?</label>
+                    <!--This is an text type input, for text-->
+                    <input name="nameinput" type="number" class="form-control" id="exampleFormControlInput1"
+                        value="1" >
+                </div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="buttonsub" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="printInfo()">Submit</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Total</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <P id="content"></P>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 
-  
+                    </form>
+              
+            </tr>
+
+            <p id="footer1"> Made by Evan Crowley</p>
+        </table>
+
+        <!-- Add the modal for displaying the content of the form below -->
+
+
+    </div>
+
 </body>
 <footer><script type="text/javascript" src="script.js"></script></footer>
+
 </html>
