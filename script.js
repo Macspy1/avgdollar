@@ -27,7 +27,7 @@
                 var num3 = elements[3].value;
                 var num4 = elements[4].value;
                 var hrsw = num1*num2;
-
+                var num5=0;
                 var mpay = 4*(num*hrsw);
                 var ypay = mpay*12;
                 var yearlyinterestadded =0;
@@ -37,6 +37,7 @@
 
 	            for(var i =0; i < num4; i++) {
 		 yearlyinterestadded = (ypayandinterest /100)*num3;
+         num5 += yearlyinterestadded;
 	ypayandinterest = (ypay+(yearlyinterestadded*num4));
     ypayandinteresttotal+= ypayandinterest;}
 
@@ -46,10 +47,13 @@
             roundToTwo(num1);
             roundToTwo(num2);
             roundToTwo(num4);
+            roundToTwo(num5);
             roundToTwo(mpay);
             roundToTwo(ypay);
             roundToTwo(yearlyinterestadded);
             roundToTwo(ypayandinterest);
+
+          
 
                 $("#modal-title").text("Your form has been submitted!");
                 for (var i = 0; i < elements.length; i++) {
@@ -62,8 +66,14 @@
                     + "<br> <br>" +"Money added from Interest per year: "+ roundToTwo(yearlyinterestadded) +"$" 
                     
                 }
-                   if(num4 == 1){content += "<br> <br>" +"Money in the account because of interest after " + num4 +" year: "+ roundToTwo(ypayandinteresttotal)+"$"}
-                else{content += "<br> <br>" +"Money in the account because of interest after " + num4 +" years: "+ roundToTwo(ypayandinteresttotal) +"$"}
+                   if(num4 == 1){content += "<br> <br>" +"Money in the account because of interest after " + num4 +" year: "+ roundToTwo(ypayandinteresttotal)+"$"
+                  
+                   content += "<br> <br>" +"Money in the account from just interest after " + num4 +" year: "+ roundToTwo(num5)+"$"
+                }
+                else{content += "<br> <br>" +"Money in the account because of interest after " + num4 +" years: "+ roundToTwo(ypayandinteresttotal) +"$"
+               
+                content += "<br> <br>" +"Money in the account from just interest after " + num4 +" years: "+ roundToTwo(num5)+"$"
+            }
                 document.getElementById("content").innerHTML = " " + content;
             }
 
